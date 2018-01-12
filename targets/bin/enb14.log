@@ -1,0 +1,317 @@
+# /dev/cpu_dma_latency set to 0us
+log init done
+num component carrier 1 
+WARNING: setting 'gtpu_log_level' not found in configuration file
+WARNING: setting 'gtpu_log_verbosity' not found in configuration file
+WARNING: setting 'udp_log_level' not found in configuration file
+WARNING: setting 'udp_log_verbosity' not found in configuration file
+WARNING: setting 'osa_log_level' not found in configuration file
+WARNING: setting 'osa_log_verbosity' not found in configuration file
+
+----------------------------------------------------------------------
+ ENB CONFIG FILE CONTENT LOADED (TBC):
+----------------------------------------------------------------------
+ENB CONFIG for instance 0:
+
+	eNB name:           	eNB_Eurecom_LTEBox:
+	eNB ID:             	3584:
+	Cell type:          	CELL_MACRO_ENB:
+	TAC:                	1:
+	MCC:                	208:
+	MNC:                	93:
+
+	node_function for CC 0:      	eNodeB_3GPP:
+	node_timing for CC 0:        	synch_to_ext_device:
+	node_synch_ref for CC 0:     	0:
+	eutra band for CC 0:         	7:
+	downlink freq for CC 0:      	2660000000:
+	uplink freq offset for CC 0: 	-120000000:
+
+	Cell ID for CC 0:	0:
+	N_RB_DL for CC 0:	25:
+	nb_antenna_ports for CC 0:	1:
+	nb_antennas_tx for CC 0:	1:
+	nb_antennas_rx for CC 0:	1:
+	rach_numberOfRA_Preambles for CC 0:	15:
+	rach_preamblesGroupAConfig for CC 0:	0:
+	rach_powerRampingStep for CC 0:	2:
+	rach_preambleInitialReceivedTargetPower for CC 0:	8:
+	rach_preambleTransMax for CC 0:	6:
+	rach_raResponseWindowSize for CC 0:	7:
+	rach_macContentionResolutionTimer for CC 0:	5:
+	rach_maxHARQ_Msg3Tx for CC 0:	4:
+	bcch_modificationPeriodCoeff for CC 0:	0:
+	pcch_defaultPagingCycle for CC 0:	2:
+	pcch_nB for CC 0:	2:
+	prach_root for CC 0:	0:
+	prach_config_index for CC 0:	0:
+	prach_high_speed for CC 0:	0:
+	prach_zero_correlation for CC 0:	1:
+	prach_freq_offset for CC 0:	2:
+	pdsch_referenceSignalPower for CC 0:	-24:
+	pdsch_p_b for CC 0:	0:
+	pusch_n_SB for CC 0:	1:
+	pusch_hoppingMode for CC 0:	0:
+	pusch_hoppingOffset for CC 0:	0:
+	pusch_enable64QAM for CC 0:	0:
+	pusch_groupHoppingEnabled for CC 0:	1:
+	pusch_groupAssignment for CC 0:	0:
+	pusch_sequenceHoppingEnabled for CC 0:	0:
+	pusch_nDMRS1 for CC 0:	1:
+	pucch_delta_shift for CC 0:	0:
+	pucch_nRB_CQI for CC 0:	1:
+	pucch_nCS_AN for CC 0:	0:
+	srs_enable for CC 0:	0:
+	pusch_p0_Nominal for CC 0:	-90:
+	pucch_p0_Nominal for CC 0:	-96:
+	pusch_alpha for CC 0:	7:
+	pucch_deltaF_Format1 for CC 0:	2:
+	pucch_deltaF_Format1b for CC 0:	1:
+	pucch_deltaF_Format2 for CC 0:	1:
+	pucch_deltaF_Format2a for CC 0:	1:
+	pucch_deltaF_Format2b for CC 0:	1:
+	msg3_delta_Preamble for CC 0:	6:
+	ul_CyclicPrefixLength for CC 0:	0:
+	ue_TimersAndConstants_t300 for CC 0:	5:
+	ue_TimersAndConstants_t301 for CC 0:	5:
+	ue_TimersAndConstants_t310 for CC 0:	5:
+	ue_TimersAndConstants_n310 for CC 0:	7:
+	ue_TimersAndConstants_t311 for CC 0:	3:
+	ue_TimersAndConstants_n311 for CC 0:	0:
+	ue_TransmissionMode for CC 0:	0:
+
+	Global log level:  	info
+	HW log level:      	info
+	PHY log level:     	info
+	MAC log level:     	info
+	RLC log level:     	info
+	PDCP log level:    	info
+	RRC log level:     	info
+	UDP log level:     	info
+	GTP log level:     	info
+	OSA log level:     	info
+
+--------------------------------------------------------
+Downlink frequency/ uplink offset of CC_id 0 set to 2660000000/-120000000
+configuring for eNB
+CPU Freq is 3.392328 
+reported resolution = 1 ns
+[HW][I]Version: Branch: master Abrev. Hash: 45212d3 Date: Tue Aug 8 10:06:38 2017 +0200
+[PHY][I]Initializing frame parms for N_RB_DL 25, Ncp 0, osf 1
+lte_parms.c: Setting N_RB_DL to 25, ofdm_symbol_size 512
+[PHY][I][eNB 0] Initializing DL_FRAME_PARMS : N_RB_DL 25, PHICH Resource 1, PHICH Duration 0
+[openair][LTE_PHY][INIT] common_vars->txdataF[0][0] = 0x7fa328e63040 (286720 bytes)
+[openair][LTE_PHY][INIT] common_vars->txdataF[0][5] = 0x7fa328e1c040 (286720 bytes)
+[openair][LTE_PHY][INIT] common_vars->txdata[0][0] = 0x7fa328dd0040 (307200 bytes)
+[openair][LTE_PHY][INIT] common_vars->rxdata[0][0] = 0x7fa328d84040 (307200 bytes)
+[openair][LTE_PHY][INIT] common_vars->rxdata_7_5kHz[0][0] = 0x15fcb3c0 (61440 bytes)
+[openair][LTE_PHY][INIT] prach_vars->rxsigF[0] = 0x16396080
+[openair][LTE_PHY][INIT] prach_vars->prach_ifft[0] = 0x1639c0e0
+[PHY][I]init eNB: Node Function 0
+[PHY][I]init eNB: Nid_cell 0
+[PHY][I]init eNB: frame_type 0,tdd_config 3
+[PHY][I]init eNB: number of ue max 16 number of enb max 1 number of harq pid max 8
+[PHY][I]init eNB: N_RB_DL 25
+[PHY][I]init eNB: prach_config_index 0
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 0
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 0
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 1
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 1
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 2
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 2
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 3
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 3
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 4
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 4
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 5
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 5
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 6
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 6
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 7
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 7
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 8
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 8
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 9
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 9
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 10
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 10
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 11
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 11
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 12
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 12
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 13
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 13
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 14
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 14
+[PHY][I]Allocating Transport Channel Buffers for DLSCH, UE 15
+[PHY][I]Allocating Transport Channel Buffer for ULSCH, UE 15
+CPU Freq is 3.392326 
+frame_parms->N_RB_DL=25
+frame_parms->N_RB_UL=25
+frame_parms->Nid_cell=0
+frame_parms->Ncp=0
+frame_parms->Ncp_UL=0
+frame_parms->nushift=0
+frame_parms->frame_type=0
+frame_parms->tdd_config=3
+frame_parms->tdd_config_S=0
+frame_parms->mode1_flag=1
+frame_parms->nb_antenna_ports_eNB=1
+frame_parms->nb_antennas_tx=1
+frame_parms->nb_antennas_rx=1
+frame_parms->ofdm_symbol_size=512
+frame_parms->nb_prefix_samples=36
+frame_parms->nb_prefix_samples0=40
+frame_parms->first_carrier_offset=362
+frame_parms->samples_per_tti=7680
+frame_parms->symbols_per_tti=14
+HW: Configuring card 0, nb_antennas_tx/rx 1/1
+Card 0, channel 0, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 2660000000.000000, rx_freq 2540000000.000000
+Card 0, channel 1, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 0, channel 2, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 0, channel 3, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+HW: Configuring card 1, nb_antennas_tx/rx 1/1
+Card 1, channel 0, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 2660000000.000000, rx_freq 2540000000.000000
+Card 1, channel 1, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 1, channel 2, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 1, channel 3, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+HW: Configuring card 2, nb_antennas_tx/rx 1/1
+Card 2, channel 0, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 2660000000.000000, rx_freq 2540000000.000000
+Card 2, channel 1, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 2, channel 2, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 2, channel 3, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+HW: Configuring card 3, nb_antennas_tx/rx 1/1
+Card 3, channel 0, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 2660000000.000000, rx_freq 2540000000.000000
+Card 3, channel 1, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 3, channel 2, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 3, channel 3, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+HW: Configuring card 4, nb_antennas_tx/rx 1/1
+Card 4, channel 0, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 2660000000.000000, rx_freq 2540000000.000000
+Card 4, channel 1, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 4, channel 2, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 4, channel 3, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+HW: Configuring card 5, nb_antennas_tx/rx 1/1
+Card 5, channel 0, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 2660000000.000000, rx_freq 2540000000.000000
+Card 5, channel 1, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 5, channel 2, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 5, channel 3, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+HW: Configuring card 6, nb_antennas_tx/rx 1/1
+Card 6, channel 0, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 2660000000.000000, rx_freq 2540000000.000000
+Card 6, channel 1, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 6, channel 2, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 6, channel 3, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+HW: Configuring card 7, nb_antennas_tx/rx 1/1
+Card 7, channel 0, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 2660000000.000000, rx_freq 2540000000.000000
+Card 7, channel 1, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 7, channel 2, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 7, channel 3, Setting tx_gain 90.000000, rx_gain 125.000000, tx_freq 0.000000, rx_freq 0.000000
+[HW][I]CPU Affinity of main() function is...  CPU_0  CPU_1  CPU_2  CPU_3 
+[PHY][I]Intializing L2
+[MAC][I][l2_init] [MAIN] MAC_INIT_GLOBAL_PARAM IN...
+[MAC][I][mac_init_global_param] [MAIN] CALLING RLC_MODULE_INIT...
+[MAC][I][mac_init_global_param] [MAIN] RLC_MODULE_INIT OK, malloc16 for mac_rlc_xface...
+[MAC][I][mac_init_global_param] [MAIN] malloc16 OK, mac_rlc_xface @ 0x1805a8e0
+[MAC][I][mac_init_global_param] [MAIN] RLC interface setup and init
+[PDCP][I]PDCP layer has been initialized
+[MAC][I][mac_init_global_param] [MAIN] Init Global Param Done
+[MAC][I][l2_init] [MAIN] init eNB MAC functions  
+[MAC][I][l2_init] [MAIN] init UE MAC functions 
+[MAC][I][l2_init] [MAIN] PHY Frame configuration 
+[MAC][I][mac_top_init] [MAIN] Init function start:Nb_UE_INST=0
+[MAC][I][mac_top_init] [MAIN] Init function start:Nb_eNB_INST=1
+[MAC][I][mac_top_init] [MAIN] calling RRC
+[RRC][I][eNB] handover active state is 0 
+[RRC][I][eNB] eMBMS active state is 0 
+[MAC][I][mac_top_init] [MAIN][INIT] Init function finished
+[SCTP][I][sctp_eNB_task] Starting SCTP layer
+[S1AP][I][s1ap_eNB_task] Starting S1AP layer
+[UDP][I]Initializing UDP task interface
+[UDP][I]Initializing UDP task interface: DONE
+[GTPV1U][I]Initializing GTPU stack 0x103cfc0
+ITTI tasks created
+Wait for the ITTI initialize message
+[ENB_APP][I][eNB_app_register] [eNB 0] eNB_app_register for instance 0
+[S1AP][I][s1ap_eNB_handle_register_eNB] Registered new eNB[0] and macro eNB id 3584
+[S1AP][I][s1ap_eNB_register_mme] [eNB 0] check the mme registration state
+[SCTP][I][sctp_handle_new_association_req] sctp_bindx SCTP_BINDX_ADD_ADDR socket bound to : 192.168.12.82
+[SCTP][I][sctp_handle_new_association_req] Converted ipv4 address 192.168.12.62 to network type
+[SCTP][I][sctp_handle_new_association_req] connectx assoc_id  12 in progress..., used 1 addresses
+[SCTP][I][sctp_handle_new_association_req] Inserted new descriptor for sd 40 in list, nb elements 1, assoc_id 12
+[SCTP][I][sctp_eNB_flush_sockets] Found data for descriptor 40
+[SCTP][I][sctp_eNB_read_from_socket] Received notification for sd 40, type 32769
+[SCTP][I][sctp_eNB_read_from_socket] Client association changed: 0
+[SCTP][I][sctp_get_peeraddresses] ----------------------
+[SCTP][I][sctp_get_peeraddresses] Peer addresses:
+[SCTP][I][sctp_get_peeraddresses]     - [192.168.12.62]
+[SCTP][I][sctp_get_peeraddresses] ----------------------
+[SCTP][I][sctp_get_sockinfo] ----------------------
+[SCTP][I][sctp_get_sockinfo] SCTP Status:
+[SCTP][I][sctp_get_sockinfo] assoc id .....: 12
+[SCTP][I][sctp_get_sockinfo] state ........: 4
+[SCTP][I][sctp_get_sockinfo] instrms ......: 2
+[SCTP][I][sctp_get_sockinfo] outstrms .....: 2
+[SCTP][I][sctp_get_sockinfo] fragmentation : 1452
+[SCTP][I][sctp_get_sockinfo] pending data .: 0
+[SCTP][I][sctp_get_sockinfo] unack data ...: 0
+[SCTP][I][sctp_get_sockinfo] rwnd .........: 106496
+[SCTP][I][sctp_get_sockinfo] peer info     :
+[SCTP][I][sctp_get_sockinfo]     state ....: 2
+[SCTP][I][sctp_get_sockinfo]     cwnd .....: 4380
+[SCTP][I][sctp_get_sockinfo]     srtt .....: 0
+[SCTP][I][sctp_get_sockinfo]     rto ......: 3000
+[SCTP][I][sctp_get_sockinfo]     mtu ......: 1500
+[SCTP][I][sctp_get_sockinfo] ----------------------
+[SCTP][I][sctp_eNB_read_from_socket] Comm up notified for sd 40, assigned assoc_id 12
+[S1AP][I][s1ap_eNB_generate_s1_setup_request] 3584 -> 00e000
+[UDP][I]Initializing UDP for local address 192.168.12.82 with port 2152
+[UDP][I]Inserting new descriptor for task 11, sd 41
+[UDP][I]Initializing UDP for local address 192.168.12.82 with port 2152: DONE
+[RRC][I][eNB 0] Received RRC_CONFIGURATION_REQ
+[RRC][I][FRAME 00000][eNB][MOD 00][RNTI 0] Init...
+[RRC][I][FRAME 00000][eNB][MOD 00][RNTI 0] Checking release 
+[RRC][I][FRAME 00000][eNB][MOD 00][RNTI 0] Rel14 RRC detected, MBMS flag 0
+[SCTP][I][sctp_send_data] Successfully sent 59 bytes on stream 0 for assoc_id 12
+[SCTP][I][sctp_eNB_flush_sockets] Found data for descriptor 40
+[SCTP][I][sctp_eNB_read_from_socket] Received notification for sd 40, type 32777
+[SCTP][I][sctp_eNB_flush_sockets] Found data for descriptor 40
+[SCTP][I][sctp_eNB_read_from_socket] [12][40] Msg of length 27 received from port 36412, on stream 0, PPID 18
+[S1AP][I][s1ap_decode_s1ap_s1setupresponseies] Decoding message S1ap_S1SetupResponseIEs (/home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/R10.5/s1ap_decoder.c:3535)
+[S1AP][I][s1ap_eNB_handle_s1_setup_response] servedGUMMEIs.list.count 1
+[S1AP][I][s1ap_eNB_handle_s1_setup_response] servedPLMNs.list.count 1
+[ENB_APP][I][eNB_app_task] [eNB 0] Received S1AP_REGISTER_ENB_CNF: associated MME 1
+[RRC][I][eNB 0] Configuration SIB2/3, MBMS = 0
+[MAC][I][rrc_mac_config_req] [CONFIG][eNB 0/0] Configuring MAC/PHY
+[MAC][I][rrc_mac_config_req] [CONFIG]SIB2/3 Contents (partial)
+[MAC][I][rrc_mac_config_req] [CONFIG]pusch_config_common.n_SB = 1
+[MAC][I][rrc_mac_config_req] [CONFIG]pusch_config_common.hoppingMode = 0
+[MAC][I][rrc_mac_config_req] [CONFIG]pusch_config_common.pusch_HoppingOffset = 0
+[MAC][I][rrc_mac_config_req] [CONFIG]pusch_config_common.enable64QAM = 0
+[MAC][I][rrc_mac_config_req] [CONFIG]pusch_config_common.groupHoppingEnabled = 1
+[MAC][I][rrc_mac_config_req] [CONFIG]pusch_config_common.groupAssignmentPUSCH = 0
+[MAC][I][rrc_mac_config_req] [CONFIG]pusch_config_common.sequenceHoppingEnabled = 0
+[MAC][I][rrc_mac_config_req] [CONFIG]pusch_config_common.cyclicShift  = 1
+[RRC][I][FRAME 00000][eNB][MOD 00][RNTI 0] OPENAIR RRC IN....
+Initializing eNB threads
+[PHY][I]Initializing eNB 0 CC_id 0 : (eNodeB_3GPP,synch_to_ext_device)
+linux; GNU C++ version 5.4.0 20160609; Boost_105800; UHD_003.010.002.000-release
+
+[PHY][I]Checking for USRPs : UHD 003.010.002.000-release (3.10.2)
+[PHY][I]Found USRP B200
+-- Detected Device: B210
+-- Operating over USB 3.
+-- Initialize CODEC control...
+-- Initialize Radio control...
+-- Performing register loopback test... pass
+-- Performing register loopback test... pass
+-- Performing CODEC loopback test... pass
+-- Performing CODEC loopback test... pass
+-- Setting master clock rate selection to 'automatic'.
+-- Asking for clock rate 16.000000 MHz... 
+-- Actually got clock rate 16.000000 MHz.
+-- Performing timer loopback test... pass
+-- Performing timer loopback test... pass
+-- Setting master clock rate selection to 'manual'.
+-- Asking for clock rate 30.720000 MHz... 
+-- Actually got clock rate 30.720000 MHz.
+-- Performing timer loopback test... pass
+-- Performing timer loopback test... pass
