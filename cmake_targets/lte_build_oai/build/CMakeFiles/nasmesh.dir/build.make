@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai
+CMAKE_SOURCE_DIR = /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build
+CMAKE_BINARY_DIR = /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build
 
 # Utility rule file for nasmesh.
 
@@ -57,8 +57,8 @@ CMakeFiles/nasmesh: nasmesh.ko
 
 
 nasmesh.ko:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) /home/airbustx2w/openairinterface5g/openair2/NETWORK_DRIVER/MESH/netlink.c
-	cd /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/nasmesh && make -C /lib/modules/4.8.0-58-lowlatency/build M=/home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/nasmesh
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) /home/oainuc2/openairinterface5g/openair2/NETWORK_DRIVER/MESH/netlink.c
+	cd /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/nasmesh && make -C /lib/modules/4.8.0-58-lowlatency/build M=/home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/nasmesh
 
 nasmesh: CMakeFiles/nasmesh
 nasmesh: nasmesh.ko
@@ -76,6 +76,6 @@ CMakeFiles/nasmesh.dir/clean:
 .PHONY : CMakeFiles/nasmesh.dir/clean
 
 CMakeFiles/nasmesh.dir/depend:
-	cd /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/nasmesh.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/nasmesh.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/nasmesh.dir/depend
 

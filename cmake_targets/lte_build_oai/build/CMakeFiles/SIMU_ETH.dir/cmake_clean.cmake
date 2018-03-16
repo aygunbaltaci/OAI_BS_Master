@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SIMU_ETH.dir/home/airbustx2w/openairinterface5g/openair1/SIMULATION/ETH_TRANSPORT/netlink_init.c.o"
-  "CMakeFiles/SIMU_ETH.dir/home/airbustx2w/openairinterface5g/openair1/SIMULATION/ETH_TRANSPORT/multicast_link.c.o"
-  "CMakeFiles/SIMU_ETH.dir/home/airbustx2w/openairinterface5g/openair1/SIMULATION/ETH_TRANSPORT/socket.c.o"
-  "CMakeFiles/SIMU_ETH.dir/home/airbustx2w/openairinterface5g/openair1/SIMULATION/ETH_TRANSPORT/bypass_session_layer.c.o"
-  "CMakeFiles/SIMU_ETH.dir/home/airbustx2w/openairinterface5g/openair1/SIMULATION/ETH_TRANSPORT/emu_transport.c.o"
-  "CMakeFiles/SIMU_ETH.dir/home/airbustx2w/openairinterface5g/openair1/SIMULATION/ETH_TRANSPORT/pgm_link.c.o"
+  "CMakeFiles/SIMU_ETH.dir/home/oainuc2/openairinterface5g/openair1/SIMULATION/ETH_TRANSPORT/netlink_init.c.o"
+  "CMakeFiles/SIMU_ETH.dir/home/oainuc2/openairinterface5g/openair1/SIMULATION/ETH_TRANSPORT/multicast_link.c.o"
+  "CMakeFiles/SIMU_ETH.dir/home/oainuc2/openairinterface5g/openair1/SIMULATION/ETH_TRANSPORT/socket.c.o"
+  "CMakeFiles/SIMU_ETH.dir/home/oainuc2/openairinterface5g/openair1/SIMULATION/ETH_TRANSPORT/bypass_session_layer.c.o"
+  "CMakeFiles/SIMU_ETH.dir/home/oainuc2/openairinterface5g/openair1/SIMULATION/ETH_TRANSPORT/emu_transport.c.o"
+  "CMakeFiles/SIMU_ETH.dir/home/oainuc2/openairinterface5g/openair1/SIMULATION/ETH_TRANSPORT/pgm_link.c.o"
   "libSIMU_ETH.pdb"
   "libSIMU_ETH.a"
 )

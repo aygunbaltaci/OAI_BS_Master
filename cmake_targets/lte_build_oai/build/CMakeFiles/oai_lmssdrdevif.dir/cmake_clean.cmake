@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/oai_lmssdrdevif.dir/home/airbustx2w/openairinterface5g/targets/ARCH/LMSSDR/USERSPACE/LIB/lms_lib.cpp.o"
+  "CMakeFiles/oai_lmssdrdevif.dir/home/oainuc2/openairinterface5g/targets/ARCH/LMSSDR/USERSPACE/LIB/lms_lib.cpp.o"
   "liboai_lmssdrdevif.pdb"
   "liboai_lmssdrdevif.so"
 )

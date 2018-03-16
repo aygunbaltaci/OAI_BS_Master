@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/updatefw.dir/home/airbustx2w/openairinterface5g/targets/ARCH/EXMIMO/USERSPACE/OAI_FW_INIT/updatefw.c.o"
+  "CMakeFiles/updatefw.dir/home/oainuc2/openairinterface5g/targets/ARCH/EXMIMO/USERSPACE/OAI_FW_INIT/updatefw.c.o"
   "updatefw.pdb"
   "updatefw"
 )

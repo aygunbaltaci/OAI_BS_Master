@@ -7,8 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/R10.5/s1ap_xer_print.c"
   "CMakeFiles/R10.5/s1ap_compare.c"
   "CMakeFiles/R10.5/s1ap_ies_defs.h"
-  "CMakeFiles/pucchsim.dir/home/airbustx2w/openairinterface5g/openair1/SIMULATION/LTE_PHY/pucchsim.c.o"
-  "CMakeFiles/pucchsim.dir/home/airbustx2w/openairinterface5g/openair1/PHY/TOOLS/lte_phy_scope.c.o"
+  "CMakeFiles/pucchsim.dir/home/oainuc2/openairinterface5g/openair1/SIMULATION/LTE_PHY/pucchsim.c.o"
+  "CMakeFiles/pucchsim.dir/home/oainuc2/openairinterface5g/openair1/PHY/TOOLS/lte_phy_scope.c.o"
   "pucchsim.pdb"
   "pucchsim"
 )

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/test_kdf.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_kdf.c.o"
+  "CMakeFiles/test_kdf.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_kdf.c.o"
   "test_kdf.pdb"
   "test_kdf"
 )

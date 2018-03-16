@@ -7,8 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/R10.5/s1ap_xer_print.c"
   "CMakeFiles/R10.5/s1ap_compare.c"
   "CMakeFiles/R10.5/s1ap_ies_defs.h"
-  "CMakeFiles/scansim.dir/home/airbustx2w/openairinterface5g/openair1/SIMULATION/LTE_PHY/scansim.c.o"
-  "CMakeFiles/scansim.dir/home/airbustx2w/openairinterface5g/openair1/PHY/TOOLS/lte_phy_scope.c.o"
+  "CMakeFiles/scansim.dir/home/oainuc2/openairinterface5g/openair1/SIMULATION/LTE_PHY/scansim.c.o"
+  "CMakeFiles/scansim.dir/home/oainuc2/openairinterface5g/openair1/PHY/TOOLS/lte_phy_scope.c.o"
   "scansim.pdb"
   "scansim"
 )

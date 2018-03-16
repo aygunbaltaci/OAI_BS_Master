@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/HASHTABLE.dir/home/airbustx2w/openairinterface5g/common/utils/hashtable/hashtable.c.o"
-  "CMakeFiles/HASHTABLE.dir/home/airbustx2w/openairinterface5g/common/utils/hashtable/obj_hashtable.c.o"
+  "CMakeFiles/HASHTABLE.dir/home/oainuc2/openairinterface5g/common/utils/hashtable/hashtable.c.o"
+  "CMakeFiles/HASHTABLE.dir/home/oainuc2/openairinterface5g/common/utils/hashtable/obj_hashtable.c.o"
   "libHASHTABLE.pdb"
   "libHASHTABLE.a"
 )

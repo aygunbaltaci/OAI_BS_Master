@@ -7,7 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/R10.5/s1ap_xer_print.c"
   "CMakeFiles/R10.5/s1ap_compare.c"
   "CMakeFiles/R10.5/s1ap_ies_defs.h"
-  "CMakeFiles/test_epc_generate_scenario.dir/home/airbustx2w/openairinterface5g/openair3/TEST/EPC_TEST/generate_scenario.c.o"
+  "CMakeFiles/test_epc_generate_scenario.dir/home/oainuc2/openairinterface5g/openair3/TEST/EPC_TEST/generate_scenario.c.o"
   "test_epc_generate_scenario.pdb"
   "test_epc_generate_scenario"
 )

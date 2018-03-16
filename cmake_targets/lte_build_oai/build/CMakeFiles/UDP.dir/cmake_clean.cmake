@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/UDP.dir/home/airbustx2w/openairinterface5g/openair3/UDP/udp_eNB_task.c.o"
+  "CMakeFiles/UDP.dir/home/oainuc2/openairinterface5g/openair3/UDP/udp_eNB_task.c.o"
   "libUDP.pdb"
   "libUDP.a"
 )

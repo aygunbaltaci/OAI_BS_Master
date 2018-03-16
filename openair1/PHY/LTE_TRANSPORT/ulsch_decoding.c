@@ -900,6 +900,7 @@ unsigned int  ulsch_decoding(PHY_VARS_eNB *eNB,eNB_rxtx_proc_t *proc,
 
   if (ulsch_harq->Nsymb_pusch == 0) {
       LOG_E(PHY, "FATAL ERROR: harq_pid %d, Nsymb 0!\n",harq_pid);
+      printf("Airbus, # of symbols in PUSCH is 0, 903, ulsch_decoding.c\n"); //{baltaci}
       VCD_SIGNAL_DUMPER_DUMP_FUNCTION_BY_NAME(VCD_SIGNAL_DUMPER_FUNCTIONS_PHY_ENB_ULSCH_DECODING0+harq_pid,0); 
       return 1+ulsch->max_turbo_iterations;
   }
@@ -2010,6 +2011,7 @@ uint32_t ulsch_decoding_emul(PHY_VARS_eNB *eNB, eNB_rxtx_proc_t *proc,
   if (UE_id==NB_UE_INST) {
     LOG_W(PHY,"[eNB %d] ulsch_decoding_emul: FATAL, didn't find UE with rnti %x (UE index %d)\n",
           eNB->Mod_id, rnti, UE_index);
+    printf("Airbus, could not find UE, 2014, ulsch_decoding.c\n"); //{baltaci}
     return(1+eNB->ulsch[UE_id]->max_turbo_iterations);
   } else {
     LOG_D(PHY,"[eNB %d] Found UE with rnti %x => UE_id %d\n",eNB->Mod_id, rnti, UE_id);
@@ -2096,7 +2098,7 @@ uint32_t ulsch_decoding_emul(PHY_VARS_eNB *eNB, eNB_rxtx_proc_t *proc,
     return(1);
   } else {
     LOG_W(PHY,"[eNB %d] ulsch_decoding_emul abstraction failed for UE %d\n",eNB->Mod_id,UE_index);
-
+    printf("Airbus, we are not supposed to be here, 2101, ulsch_decoding.c\n"); //{baltaci}
     eNB->ulsch[UE_index]->harq_processes[harq_pid]->cqi_crc_status = 0;
 
     // retransmission

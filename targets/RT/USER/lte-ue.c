@@ -112,7 +112,7 @@ static const eutra_band_t eutra_bands[] = {
     {17,  704    * MHz,  716    * MHz,  734    * MHz,  746    * MHz, FDD},
     {20,  832    * MHz,  862    * MHz,  791    * MHz,  821    * MHz, FDD},
     {22, 3510    * MHz, 3590    * MHz, 3410    * MHz, 3490    * MHz, FDD},
-    {33, 1900    * MHz, 1920    * MHz, 1900    * MHz, 1920    * MHz, TDD},
+    {33, 1895    * MHz, 1925    * MHz, 1900    * MHz, 1925    * MHz, FDD}, // {baltaci} was originally {33, 1900    * MHz, 1920    * MHz, 1900    * MHz, 1920    * MHz, TDD}
     {34, 2010    * MHz, 2025    * MHz, 2010    * MHz, 2025    * MHz, TDD},
     {35, 1850    * MHz, 1910    * MHz, 1850    * MHz, 1910    * MHz, TDD},
     {36, 1930    * MHz, 1990    * MHz, 1930    * MHz, 1990    * MHz, TDD},
@@ -122,9 +122,9 @@ static const eutra_band_t eutra_bands[] = {
     {40, 2300    * MHz, 2400    * MHz, 2300    * MHz, 2400    * MHz, TDD},
     {41, 2496    * MHz, 2690    * MHz, 2496    * MHz, 2690    * MHz, TDD},
     {42, 3400    * MHz, 3600    * MHz, 3400    * MHz, 3600    * MHz, TDD},
-    {43, 3600    * MHz, 3800    * MHz, 3600    * MHz, 3800    * MHz, TDD},
+    {45, 3620    * MHz, 3800    * MHz, 3600    * MHz, 3800    * MHz, FDD},  // {baltaci} was originally {43, 3600    * MHz, 3800    * MHz, 3600    * MHz, 3800    * MHz, TDD}
     {44, 703    * MHz, 803    * MHz, 703    * MHz, 803    * MHz, TDD},
-};
+  };
 
 void init_thread(int sched_runtime, int sched_deadline, int sched_fifo, cpu_set_t *cpuset, char * name) {
 
@@ -942,4 +942,3 @@ int setup_ue_buffers(PHY_VARS_UE **phy_vars_ue, openair0_config_t *openair0_cfg)
     }
     return 0;
 }
-

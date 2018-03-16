@@ -1,4 +1,4 @@
 Scanning dependencies of target oai_usrpdevif
-Building CXX object CMakeFiles/oai_usrpdevif.dir/home/airbustx2w/openairinterface5g/targets/ARCH/USRP/USERSPACE/LIB/usrp_lib.cpp.o
+Building CXX object CMakeFiles/oai_usrpdevif.dir/home/oainuc2/openairinterface5g/targets/ARCH/USRP/USERSPACE/LIB/usrp_lib.cpp.o
 Linking CXX shared module liboai_usrpdevif.so
 Built target oai_usrpdevif

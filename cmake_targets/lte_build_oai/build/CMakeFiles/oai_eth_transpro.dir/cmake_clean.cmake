@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/oai_eth_transpro.dir/home/airbustx2w/openairinterface5g/targets/ARCH/ETHERNET/USERSPACE/LIB/ethernet_lib.c.o"
-  "CMakeFiles/oai_eth_transpro.dir/home/airbustx2w/openairinterface5g/targets/ARCH/ETHERNET/USERSPACE/LIB/eth_udp.c.o"
-  "CMakeFiles/oai_eth_transpro.dir/home/airbustx2w/openairinterface5g/targets/ARCH/ETHERNET/USERSPACE/LIB/eth_raw.c.o"
+  "CMakeFiles/oai_eth_transpro.dir/home/oainuc2/openairinterface5g/targets/ARCH/ETHERNET/USERSPACE/LIB/ethernet_lib.c.o"
+  "CMakeFiles/oai_eth_transpro.dir/home/oainuc2/openairinterface5g/targets/ARCH/ETHERNET/USERSPACE/LIB/eth_udp.c.o"
+  "CMakeFiles/oai_eth_transpro.dir/home/oainuc2/openairinterface5g/targets/ARCH/ETHERNET/USERSPACE/LIB/eth_raw.c.o"
   "liboai_eth_transpro.pdb"
   "liboai_eth_transpro.so"
 )

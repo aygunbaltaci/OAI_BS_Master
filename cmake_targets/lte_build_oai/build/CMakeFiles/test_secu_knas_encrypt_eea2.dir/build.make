@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai
+CMAKE_SOURCE_DIR = /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build
+CMAKE_BINARY_DIR = /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_secu_knas_encrypt_eea2.dir/depend.make
@@ -57,44 +57,44 @@ include CMakeFiles/test_secu_knas_encrypt_eea2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test_secu_knas_encrypt_eea2.dir/flags.make
 
-CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o: CMakeFiles/test_secu_knas_encrypt_eea2.dir/flags.make
-CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o: /home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o   -c /home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c
+CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o: CMakeFiles/test_secu_knas_encrypt_eea2.dir/flags.make
+CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o: /home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o   -c /home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c
 
-CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c > CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.i
+CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c > CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.i
 
-CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c -o CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.s
+CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c -o CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.s
 
-CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.requires:
+CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.requires:
 
-.PHONY : CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.requires
+.PHONY : CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.requires
 
-CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.provides: CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.requires
-	$(MAKE) -f CMakeFiles/test_secu_knas_encrypt_eea2.dir/build.make CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.provides.build
-.PHONY : CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.provides
+CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.provides: CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.requires
+	$(MAKE) -f CMakeFiles/test_secu_knas_encrypt_eea2.dir/build.make CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.provides.build
+.PHONY : CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.provides
 
-CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.provides.build: CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o
+CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.provides.build: CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o
 
 
 # Object files for target test_secu_knas_encrypt_eea2
 test_secu_knas_encrypt_eea2_OBJECTS = \
-"CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o"
+"CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o"
 
 # External object files for target test_secu_knas_encrypt_eea2
 test_secu_knas_encrypt_eea2_EXTERNAL_OBJECTS =
 
-test_secu_knas_encrypt_eea2: CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o
+test_secu_knas_encrypt_eea2: CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o
 test_secu_knas_encrypt_eea2: CMakeFiles/test_secu_knas_encrypt_eea2.dir/build.make
 test_secu_knas_encrypt_eea2: libSECU_CN.a
 test_secu_knas_encrypt_eea2: libUTIL.a
 test_secu_knas_encrypt_eea2: libLFDS.a
 test_secu_knas_encrypt_eea2: CMakeFiles/test_secu_knas_encrypt_eea2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable test_secu_knas_encrypt_eea2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable test_secu_knas_encrypt_eea2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_secu_knas_encrypt_eea2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -102,7 +102,7 @@ CMakeFiles/test_secu_knas_encrypt_eea2.dir/build: test_secu_knas_encrypt_eea2
 
 .PHONY : CMakeFiles/test_secu_knas_encrypt_eea2.dir/build
 
-CMakeFiles/test_secu_knas_encrypt_eea2.dir/requires: CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.requires
+CMakeFiles/test_secu_knas_encrypt_eea2.dir/requires: CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o.requires
 
 .PHONY : CMakeFiles/test_secu_knas_encrypt_eea2.dir/requires
 
@@ -111,6 +111,6 @@ CMakeFiles/test_secu_knas_encrypt_eea2.dir/clean:
 .PHONY : CMakeFiles/test_secu_knas_encrypt_eea2.dir/clean
 
 CMakeFiles/test_secu_knas_encrypt_eea2.dir/depend:
-	cd /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/test_secu_knas_encrypt_eea2.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/test_secu_knas_encrypt_eea2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_secu_knas_encrypt_eea2.dir/depend
 

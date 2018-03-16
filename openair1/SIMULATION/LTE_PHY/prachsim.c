@@ -520,7 +520,7 @@ int main(int argc, char **argv)
         else {
           delay_avg += (double)preamble_delay_list[preamble_max];
         }
-
+        //{baltaci} you could possibly add a printf function here to display preamble delays!! 
         if (n_frames==1) {
           for (i=0; i<64; i++)
             if (i==preamble_tx)
@@ -573,4 +573,3 @@ int main(int argc, char **argv)
      (void *)&PHY_vars->tx_vars[0].TX_DMA_BUFFER[0],
      12*OFDM_SYMBOL_SIZE_SAMPLES_NO_PREFIX*2);
 */
-

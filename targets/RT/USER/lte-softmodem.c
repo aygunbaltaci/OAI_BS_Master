@@ -79,6 +79,8 @@ unsigned short config_frames[4] = {2,9,11,13};
 #ifdef XFORMS
 #include "PHY/TOOLS/lte_phy_scope.h"
 #include "stats.h"
+
+#define ENABLE_XFORMS_WRITE_STATS //{baltaci}
 // current status is that every UE has a DL scope for a SINGLE eNB (eNB_id=0)
 // at eNB 0, an UL scope for every UE
 FD_lte_phy_scope_ue  *form_ue[NUMBER_OF_UE_MAX];
@@ -111,7 +113,7 @@ int                             single_thread_flag=1;
 
 static char                     threequarter_fs=0;
 
-uint32_t                 downlink_frequency[MAX_NUM_CCs][4];
+uint64_t                 downlink_frequency[MAX_NUM_CCs][4]; // {baltaci} was originally uint32_t
 int32_t                  uplink_frequency_offset[MAX_NUM_CCs][4];
 
 
@@ -125,6 +127,8 @@ int UE_scan_carrier = 0;
 runmode_t mode = normal_txrx;
 
 FILE *input_fd=NULL;
+// {baltaci} for debugging purposes 
+FILE *debugAirbus; 
 
 
 #if MAX_NUM_CCs == 1
@@ -325,11 +329,12 @@ void help (void) {
   printf("  --ue-scan-carrier set UE to scan around carrier\n");
   printf("  --dlsch-demod-shift dynamic shift for LLR compuation for TM3/4 (default 0)\n");
   printf("  --loop-memory get softmodem (UE) to loop through memory instead of acquiring from HW\n");
-  printf("  --mmapped-dma sets flag for improved EXMIMO UE performance\n");  
+  printf("  --mmapped-dma sets flag for improved EXMIMO UE performance\n");
   printf("  --external-clock tells hardware to use an external clock reference\n");
-  printf("  --usim-test use XOR autentication algo in case of test usim mode\n"); 
-  printf("  --single-thread-disable. Disables single-thread mode in lte-softmodem\n"); 
+  printf("  --usim-test use XOR autentication algo in case of test usim mode\n");
+  printf("  --single-thread-disable. Disables single-thread mode in lte-softmodem\n");
   printf("  -A Set timing_advance\n");
+  printf("  -b Set tx_sample_advance\n"); //{baltaci}
   printf("  -C Set the downlink frequency for all component carriers\n");
   printf("  -d Enable soft scope and L1 and L2 stats (Xforms)\n");
   printf("  -F Calibrate the EXMIMO borad, available files: exmimo2_2arxg.lime exmimo2_2brxg.lime \n");
@@ -340,8 +345,8 @@ void help (void) {
   printf("  -m Set the maximum downlink MCS\n");
   printf("  -O eNB configuration file (located in targets/PROJECTS/GENERIC-LTE-EPC/CONF\n");
   printf("  -q Enable processing timing measurement of lte softmodem on per subframe basis \n");
-  printf("  -r Set the PRB, valid values: 6, 25, 50, 100  \n");    
-  printf("  -S Skip the missed slots/subframes \n");    
+  printf("  -r Set the PRB, valid values: 6, 25, 50, 100  \n");
+  printf("  -S Skip the missed slots/subframes \n");
   printf("  -t Set the maximum uplink MCS\n");
   printf("  -T Set hardware to TDD mode (default: FDD). Used only with -U (otherwise set in config file).\n");
   printf("  -U Set the lte softmodem as a UE\n");
@@ -462,7 +467,10 @@ static void *scope_thread(void *arg) {
                 fl_clear_browser(form_stats_l2->stats_text);
                 fl_add_browser_line(form_stats_l2->stats_text, stats_buffer);
             }
-            len = dump_eNB_stats (PHY_vars_eNB_g[0][0], stats_buffer, 0);
+            //len = dump_eNB_l2_stats (stats_buffer, 0); //{baltaci} also to save l2 stats into text file
+            //fl_clear_browser(form_stats_l2->stats_text); //{baltaci} also to save l2 stats into text file
+            //fl_add_browser_line(form_stats_l2->stats_text, stats_buffer); //{baltaci} also to save l2 stats into text file
+            len = dump_eNB_stats (PHY_vars_eNB_g[0][0], stats_buffer, 0); //{baltaci} originally was len = dump_eNB_stats (PHY_vars_eNB_g[0][0], stats_buffer, 0);
 
             if (MAX_NUM_CCs>1)
                 len += dump_eNB_stats (PHY_vars_eNB_g[0][1], &stats_buffer[len], 0);
@@ -479,6 +487,7 @@ static void *scope_thread(void *arg) {
                         phy_scope_eNB(form_enb[CC_id][ue_cnt],
                                       PHY_vars_eNB_g[0][CC_id],
                                       UE_id);
+
                         ue_cnt++;
                     }
                 }
@@ -488,8 +497,8 @@ static void *scope_thread(void *arg) {
 
         //printf("doing forms\n");
         //usleep(100000); // 100 ms
-        sleep(1);
-    }
+        //sleep(1); //{baltaci} originally was not commented out
+  // } //{baltaci}
 
     //  printf("%s",stats_buffer);
 
@@ -503,13 +512,15 @@ static void *scope_thread(void *arg) {
         }
     } else {
         if (eNB_stats) {
-            rewind (eNB_stats);
-            fwrite (stats_buffer, 1, len, eNB_stats);
-            fclose (eNB_stats);
+            // rewind (eNB_stats); // {baltaci} was not commented out before
+            fprintf( eNB_stats, "\n\nTime: %d\n", time(0)); // {baltaci} was originally fwrite (stats_buffer, 1, len, eNB_stats);
+            fwrite (stats_buffer, 1, len, eNB_stats); // {baltaci} was originally fclose (eNB_stats);
         }
     }
-
 # endif
+sleep(1); //baltaci
+} // {baltaci}
+fclose(eNB_stats);
 
     pthread_exit((void*)arg);
 }
@@ -673,8 +684,6 @@ static void get_options (int argc, char **argv) {
         {"wait-for-sync", no_argument, NULL, LONG_OPTION_WAIT_FOR_SYNC},
         {"single-thread-disable", no_argument, NULL, LONG_OPTION_SINGLE_THREAD_DISABLE},
         {"threadIQ",  required_argument, NULL, LONG_OPTION_THREADIQ},
-        {"threadOddSubframe",  required_argument, NULL, LONG_OPTION_THREADODDSUBFRAME},
-        {"threadEvenSubframe",  required_argument, NULL, LONG_OPTION_THREADEVENSUBFRAME},
         {"dlsch-demod-shift", required_argument,  NULL, LONG_OPTION_DEMOD_SHIFT},
 #if T_TRACER
         {"T_port",                 required_argument, 0, LONG_OPTION_T_PORT},
@@ -684,7 +693,7 @@ static void get_options (int argc, char **argv) {
     {NULL, 0, NULL, 0}
   };
 
-  while ((c = getopt_long (argc, argv, "A:a:C:dEK:g:F:G:hqO:m:SUVRM:r:P:Ws:t:Tx:",long_options,NULL)) != -1) {
+  while ((c = getopt_long (argc, argv, "A:a:b:C:dEK:g:F:G:hqO:m:SUVRM:r:P:Ws:t:Tx",long_options,NULL)) != -1) { // {baltaci} I added "b:" between "a:" and "C"
     switch (c) {
     case LONG_OPTION_RF_CONFIG_FILE:
       if ((strcmp("null", optarg) == 0) || (strcmp("NULL", optarg) == 0)) {
@@ -694,7 +703,7 @@ static void get_options (int argc, char **argv) {
 	strcpy(rf_config_file,optarg);
       }else {
 	printf("Configuration filename is too long\n");
-	exit(-1);   
+	exit(-1);
       }
       break;
     case LONG_OPTION_MAXPOWER:
@@ -773,7 +782,7 @@ static void get_options (int argc, char **argv) {
     case LONG_OPTION_DUMP_FRAME:
       mode = rx_dump_frame;
       break;
-      
+
     case LONG_OPTION_PHYTEST:
       phy_test = 1;
       break;
@@ -842,7 +851,7 @@ static void get_options (int argc, char **argv) {
                 downlink_frequency[CC_id][1] = downlink_frequency[CC_id][0];
                 downlink_frequency[CC_id][2] = downlink_frequency[CC_id][0];
                 downlink_frequency[CC_id][3] = downlink_frequency[CC_id][0];
-                printf("Downlink for CC_id %d frequency set to %u\n", CC_id, downlink_frequency[CC_id][0]);
+                printf("Downlink for CC_id %d frequency set to %u\n", CC_id, downlink_frequency[CC_id][0]); 
             }
 
             UE_scan=0;
@@ -1018,7 +1027,10 @@ static void get_options (int argc, char **argv) {
             for (CC_id=0; CC_id<MAX_NUM_CCs; CC_id++)
                 frame_parms[CC_id]->frame_type = TDD;
             break;
-
+        case 'b': // {baltaci} create a command line argument to adjust tx_sample_parameter
+            openair0_cfg[0].tx_sample_advance = atoi(optarg);
+            printf("debugAirbus, tx_sample_advance is now set to %d in usrp_lib.cpp\n", openair0_cfg[0].tx_sample_advance); 
+            break; 
         case 'h':
             help ();
             exit (-1);
@@ -1182,7 +1194,7 @@ static void get_options (int argc, char **argv) {
 
                 printf("Downlink frequency/ uplink offset of CC_id %d set to %ju/%d\n", CC_id,
                        enb_properties->properties[i]->downlink_frequency[CC_id],
-                       enb_properties->properties[i]->uplink_frequency_offset[CC_id]);
+                       enb_properties->properties[i]->uplink_frequency_offset[CC_id]); //{baltaci} "%llu" was originally "%ju"
 
             } // CC_id
         }// i
@@ -1303,14 +1315,14 @@ void init_openair0() {
     else //FDD
       openair0_cfg[card].duplex_mode = duplex_mode_FDD;
 
-    
-    if (local_remote_radio == BBU_REMOTE_RADIO_HEAD) {      
+
+    if (local_remote_radio == BBU_REMOTE_RADIO_HEAD) {
       openair0_cfg[card].remote_addr    = (eth_params+card)->remote_addr;
       openair0_cfg[card].remote_port    = (eth_params+card)->remote_port;
       openair0_cfg[card].my_addr        = (eth_params+card)->my_addr;
-      openair0_cfg[card].my_port        = (eth_params+card)->my_port;    
-    } 
-    
+      openair0_cfg[card].my_port        = (eth_params+card)->my_port;
+    }
+
     printf("HW: Configuring card %d, nb_antennas_tx/rx %d/%d\n",card,
            ((UE_flag==0) ? PHY_vars_eNB_g[0][0]->frame_parms.nb_antennas_tx : PHY_vars_UE_g[0][0]->frame_parms.nb_antennas_tx),
            ((UE_flag==0) ? PHY_vars_eNB_g[0][0]->frame_parms.nb_antennas_rx : PHY_vars_UE_g[0][0]->frame_parms.nb_antennas_rx));
@@ -1320,7 +1332,7 @@ void init_openair0() {
       printf("ETHERNET: Configuring UE ETH for %s:%d\n",rrh_UE_ip,rrh_UE_port);
       openair0_cfg[card].remote_addr   = &rrh_UE_ip[0];
       openair0_cfg[card].remote_port = rrh_UE_port;
-    } 
+    }
 
     openair0_cfg[card].num_rb_dl=frame_parms[0]->N_RB_DL;
 
@@ -1783,7 +1795,7 @@ int main( int argc, char **argv ) {
     if (do_forms==1) {
         fl_initialize (&argc, argv, NULL, 0, 0);
 
-        if (UE_flag==0) {
+        if (UE_flag==0) { 
             form_stats_l2 = create_form_stats_form();
             fl_show_form (form_stats_l2->stats_form, FL_PLACE_HOTSPOT, FL_FULLBORDER, "l2 stats");
             form_stats = create_form_stats_form();
@@ -1831,12 +1843,23 @@ int main( int argc, char **argv ) {
 
         printf("Scope thread created, ret=%d\n",ret);
     }
-
+    //{baltaci}
+    /*debugAirbus = fopen("debugAirbus.txt", "a"); 
+    if (debugAirbus == NULL) { 
+      printf("Error opening file! \n"); 
+      exit(1);
+    } 
+    fprintf(debugAirbus, "I am leaving in 1851 \n"); 
+    fclose(debugAirbus); */
 #endif
+
 
     rt_sleep_ns(10*100000000ULL);
 
-
+    //{baltaci}
+    /*debugAirbus = fopen("debugAirbus.txt", "a"); 
+    fprintf(debugAirbus, "I am leaving in 1860 \n"); 
+    fclose(debugAirbus);*/ 
 
     // start the main thread
     if (UE_flag == 1) {
@@ -1858,7 +1881,6 @@ int main( int argc, char **argv ) {
             PHY_vars_eNB_g[0][CC_id]->rf_map.chain=CC_id+chain_offset;
         }
     }
-
     // connect the TX/RX buffers
     if (UE_flag==1) {
 

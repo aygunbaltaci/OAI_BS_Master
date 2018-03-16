@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/oai_bladerfdevif.dir/home/airbustx2w/openairinterface5g/targets/ARCH/BLADERF/USERSPACE/LIB/bladerf_lib.c.o"
+  "CMakeFiles/oai_bladerfdevif.dir/home/oainuc2/openairinterface5g/targets/ARCH/BLADERF/USERSPACE/LIB/bladerf_lib.c.o"
   "liboai_bladerfdevif.pdb"
   "liboai_bladerfdevif.so"
 )

@@ -1194,6 +1194,7 @@ void UL_failure_indication(module_id_t mod_idP, int cc_idP, frame_t frameP, rnti
 	  mod_idP,UE_id,rntiP,frameP,subframeP, UE_id,cc_idP,
 	  UE_list->UE_sched_ctrl[UE_id].ul_failure_timer);
     if (UE_list->UE_sched_ctrl[UE_id].ul_failure_timer == 0)
+      printf("Airbus, UL_failure_indication() is triggered && ul_failure_timer set to 1, 1197, eNB_scheduler_primitives.c\n"); //{baltaci}
       UE_list->UE_sched_ctrl[UE_id].ul_failure_timer=1;
   } else {
     //     AssertFatal(0, "find_UE_id(%u,rnti %d) not found", enb_mod_idP, rntiP);

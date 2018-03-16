@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o"
+  "CMakeFiles/test_secu_knas_encrypt_eea2.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas_encrypt_eea2.c.o"
   "test_secu_knas_encrypt_eea2.pdb"
   "test_secu_knas_encrypt_eea2"
 )

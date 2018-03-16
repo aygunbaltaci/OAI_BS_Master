@@ -188,6 +188,7 @@ void *nas_ue_task(void *args_p)
           nas_proc_cell_info (user, cell_found, NAS_CELL_SELECTION_CNF (msg_p).tac,
                               NAS_CELL_SELECTION_CNF (msg_p).cellID, NAS_CELL_SELECTION_CNF (msg_p).rat,
                               NAS_CELL_SELECTION_CNF (msg_p).rsrq, NAS_CELL_SELECTION_CNF (msg_p).rsrp);
+         // printf("debugAirbus, received rsrp: %d, received rsrq: %d", (msg_p).rsrp, (msg_p).rsrq); // {baltaci}
         }
         break;
 

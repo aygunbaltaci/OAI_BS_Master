@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/test_aes128_ctr_encrypt.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_aes128_ctr_encrypt.c.o"
+  "CMakeFiles/test_aes128_ctr_encrypt.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_aes128_ctr_encrypt.c.o"
   "test_aes128_ctr_encrypt.pdb"
   "test_aes128_ctr_encrypt"
 )

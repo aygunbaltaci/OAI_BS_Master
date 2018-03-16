@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai
+CMAKE_SOURCE_DIR = /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build
+CMAKE_BINARY_DIR = /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_secu_knas.dir/depend.make
@@ -57,44 +57,44 @@ include CMakeFiles/test_secu_knas.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test_secu_knas.dir/flags.make
 
-CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.o: CMakeFiles/test_secu_knas.dir/flags.make
-CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.o: /home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.o   -c /home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c
+CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.o: CMakeFiles/test_secu_knas.dir/flags.make
+CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.o: /home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.o   -c /home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c
 
-CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c > CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.i
+CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c > CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.i
 
-CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c -o CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.s
+CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c -o CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.s
 
-CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.o.requires:
+CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.o.requires:
 
-.PHONY : CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.o.requires
+.PHONY : CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.o.requires
 
-CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.o.provides: CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.o.requires
-	$(MAKE) -f CMakeFiles/test_secu_knas.dir/build.make CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.o.provides.build
-.PHONY : CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.o.provides
+CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.o.provides: CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.o.requires
+	$(MAKE) -f CMakeFiles/test_secu_knas.dir/build.make CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.o.provides.build
+.PHONY : CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.o.provides
 
-CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.o.provides.build: CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.o
+CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.o.provides.build: CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.o
 
 
 # Object files for target test_secu_knas
 test_secu_knas_OBJECTS = \
-"CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.o"
+"CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.o"
 
 # External object files for target test_secu_knas
 test_secu_knas_EXTERNAL_OBJECTS =
 
-test_secu_knas: CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.o
+test_secu_knas: CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.o
 test_secu_knas: CMakeFiles/test_secu_knas.dir/build.make
 test_secu_knas: libSECU_CN.a
 test_secu_knas: libUTIL.a
 test_secu_knas: libLFDS.a
 test_secu_knas: CMakeFiles/test_secu_knas.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable test_secu_knas"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable test_secu_knas"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_secu_knas.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -102,7 +102,7 @@ CMakeFiles/test_secu_knas.dir/build: test_secu_knas
 
 .PHONY : CMakeFiles/test_secu_knas.dir/build
 
-CMakeFiles/test_secu_knas.dir/requires: CMakeFiles/test_secu_knas.dir/home/airbustx2w/openairinterface5g/openair3/TEST/test_secu_knas.c.o.requires
+CMakeFiles/test_secu_knas.dir/requires: CMakeFiles/test_secu_knas.dir/home/oainuc2/openairinterface5g/openair3/TEST/test_secu_knas.c.o.requires
 
 .PHONY : CMakeFiles/test_secu_knas.dir/requires
 
@@ -111,6 +111,6 @@ CMakeFiles/test_secu_knas.dir/clean:
 .PHONY : CMakeFiles/test_secu_knas.dir/clean
 
 CMakeFiles/test_secu_knas.dir/depend:
-	cd /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build /home/airbustx2w/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/test_secu_knas.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build /home/oainuc2/openairinterface5g/cmake_targets/lte_build_oai/build/CMakeFiles/test_secu_knas.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_secu_knas.dir/depend
 

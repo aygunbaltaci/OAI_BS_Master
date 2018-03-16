@@ -173,6 +173,7 @@ void eNB_dlsch_ulsch_scheduler(module_id_t module_idP,uint8_t cooperation_flag, 
       // check uplink failure
       if ((UE_list->UE_sched_ctrl[i].ul_failure_timer>0)&&
 	  (UE_list->UE_sched_ctrl[i].ul_out_of_sync==0)) {
+    printf("Airbus, Uplink failure is triggered, 175, eNB_scheduler.c\n"); //{baltaci}
 	LOG_D(MAC,"UE %d rnti %x: UL Failure timer %d \n",i,rnti,UE_list->UE_sched_ctrl[i].ul_failure_timer);
 	if (UE_list->UE_sched_ctrl[i].ra_pdcch_order_sent==0) {
 	  UE_list->UE_sched_ctrl[i].ra_pdcch_order_sent=1;

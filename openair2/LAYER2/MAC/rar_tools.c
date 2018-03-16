@@ -201,7 +201,6 @@ ue_process_rar(
   //  LOG_I(MAC,"[UE %d][RAPROC] rar->cqi_req %d\n",module_idP,rar->cqi_req);
   LOG_D(MAC,"[UE %d][RAPROC] rar->t_crnti %x\n",module_idP,(uint16_t)rar[5]+(rar[4]<<8));
 #endif
-
   if (opt_enabled) {
     LOG_D(OPT,"[UE %d][RAPROC] CC_id %d RAR Frame %d trace pdu for ra-RNTI %x\n",
           module_idP, CC_id, frameP, ra_rnti);

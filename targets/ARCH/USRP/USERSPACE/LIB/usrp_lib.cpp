@@ -600,7 +600,13 @@ extern "C" {
             case 7680000:
                 s->usrp->set_master_clock_rate(30.72e6);
                 //openair0_cfg[0].samples_per_packet    = 1024;
-                openair0_cfg[0].tx_sample_advance     = 80;
+                // {baltaci} modification in order to change tx_sample_advance from command line
+                if (openair0_cfg[0].tx_sample_advance == 0){
+                openair0_cfg[0].tx_sample_advance     = 80; // {baltaci} the only line that belongs to the original code in if statement
+                printf("debugAirbus, tx_sample_advance is set to %d in usrp_lib.cpp\n", openair0_cfg[0].tx_sample_advance);
+                } else{ 
+                printf("debugAirbus, tx_sample_advance is still %d in usrp_lib.cpp\n", openair0_cfg[0].tx_sample_advance); 
+                } 
                 openair0_cfg[0].tx_bw                 = 20e6;
                 openair0_cfg[0].rx_bw                 = 20e6;
                 break;
@@ -670,7 +676,7 @@ extern "C" {
         for (int i = 0; i<openair0_cfg[0].rx_num_channels; i++)
             stream_args_rx.channels.push_back(i);
         s->rx_stream = s->usrp->get_rx_stream(stream_args_rx);
-	
+
         uhd::stream_args_t stream_args_tx("sc16", "sc16");
         for (int i = 0; i<openair0_cfg[0].tx_num_channels; i++)
             stream_args_tx.channels.push_back(i);
